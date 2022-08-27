@@ -11,7 +11,7 @@ pipeline {
 			steps {
 				sh 'mvn --version' 
 				echo "${STAGE_NAME}"
-				echo "${BUILD_TAG}"
+				echo " BUILD TAG: ${BUILD_TAG}"
 			}
 		}
 		stage('Compile') {
